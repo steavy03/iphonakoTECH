@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    width: 100%;
+    background:  #333;
+    height: 74px;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 75px;
+    margin: auto;
+  }
+  
+  .icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+  }
+  
+  .logo {
+    color: white;
+    font-family: "lato";
+    font-size: 35px;
+    padding-left: 15px;
+    float: left;
+    padding-top: 10px;
+  }
+  .read{
+    color: crimson;
+    font-size: 45px;
+  }
+  
+  ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 30px;
+  }
+  ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: arial;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 20px;
+  }
+  ul li a :hover {
+    background: white;
+    color: crimson;
+    text-decoration: line-through;
+    border-radius: 20px;
+  }
+  ul li a:hover{
+    background: white;
+    color: black;
+  }
+  
+  .active {
+    text-decoration: line-through;
+    color: white;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    font-family: arial;
+}
+.service .service{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .service .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .wrapper .box{
+    padding: 30px 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    transition: .5s;
+  }
+  .wrapper .box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    background: linear-gradient(190deg,#f1234c,#ce2a1b);
+  }
+  .box h2{
+    font-size: 25px;
+    
+  }
+  .box p{
+    margin: 10px 0 18px;
+  }
+  .box .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #333;
+    border: 2px solid #333;
+    border-radius: 6px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+  }
+  .box .btn:hover {
+    background: transparent;
+    color: #333;
+  }
+  .service{
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 58.3vh;
+    padding: 20px 9%;
+    color: #333;
+    text-align: center;
+    font-family: 'lato';
+  }
+  h1{
+    font-size: 50px;
+    padding: 20px;
+    color: black;
+    cursor: default;
+  }
+  .ex{
+    color: crimson;
+
+  }
+  @media screen and (max-width: 992px) {
+    .service {
+      padding: 20px 5%;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .service  .wrapper{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  .samo{
+    display: inline-block;
+    padding: 8px 20px;
+    background: #333;
+    border: 2px solid #333;
+    border-radius: 15px;
+    color: #f4f4f4;
+    font-weight: 500;
+    margin-left: 47%;
+    transition: .5s;
+  }
+  .samo:hover{
+    background: transparent;
+    color: #333;
+  }
+  .samo a{
+    color:#f4f4f4;
+    text-decoration: none;
+    font-family: 'lato';
+  }
+  .samo a:hover{
+    background: transparent;
+    color: #333;
+  }
+
+  /* Styles pour le menu burger en version mobile */
+.menubar {
+  display: none; /* Caché par défaut */
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Media query pour les écrans mobiles */
+@media (max-width: 768px) {
+  .menubar {
+      display: block; /* Afficher l'icône burger */
+  }
+  
+  .menu {
+      display: none;
+      position: absolute;
+      top: 74px;
+      left: 0;
+      width: 100%;
+      background: #333;
+      flex-direction: column;
+      padding: 20px 0;
+      z-index: 1000;
+  }
+  
+  .menu.active {
+      display: flex;
+  }
+  
+  .menu ul {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 0;
+  }
+  
+  .menu li {
+      text-align: center;
+      margin: 10px 0;
+  }
+  
+  .menu li a {
+      display: block;
+      padding: 15px;
+      margin: 0;
+  }
+  
+  .navbar {
+      position: relative;
+  }
+}
+.menubar {
+    filter: invert(0); /* Pour que l'icône soit visible sur fond sombre */
+    z-index: 1001; /* Pour s'assurer qu'elle est au-dessus de tout */
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+}

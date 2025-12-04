@@ -1,0 +1,457 @@
+@import './variable.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: $larg;
+    background:$col;
+    height: 487px;}
+.navbar {
+    width: $larg;
+    height: 75px;
+    margin: auto;}
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;}
+.logo {
+    @include dir;
+    font-size: 35px;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;}
+ul{
+  list-style:none;
+  float:right;
+  display:flex;
+  margin-top:20px;
+  li{
+    a{
+      text-decoration:none;
+      padding:10px 20px;
+      margin:10px;
+      text-transform:uppercase;
+      font-weight:500;
+      font-family:arial;
+      color:$whi;
+      transition:0.6 ease;
+      :hover{
+        background:$whi;
+        color:$col;
+        text-decoration:$txt;
+        border-radius:20px;}
+    }
+  }
+}
+.active{
+  text-decoration:$txt;
+  color:$whi;}
+.content{
+  @include dir;
+  width:100vh;
+  height:auto;
+  position:$rel;
+  margin:90px;
+   .par{
+     padding-left:20px;
+     padding-bottom:25px;
+     font-family:$la;
+     letter-spacing:1.2px;
+     line-height:30px;   }
+  h1{
+    font-size:50px;
+    padding-left:20px;
+    margin-top:9%;
+    letter-spacing:2px;}
+  .cn{
+    width:170px;
+    height:40px;
+    background:$whi;
+    border:none;
+    margin-bottom:10px;
+    margin-left:20px;
+    font-size:18px;
+    border-radius:30px;
+    cursor:pointer;
+    margin-top:25px;}
+  }
+a{
+  text-decoration:none;
+  font-size:13px;
+  color:$col;}
+p{
+  font-size:15px;
+  margin-top:15px;}
+span{
+   font-weight: bold; 
+   font-size: 1.1rem;}
+#image1{
+    padding-left: 80px;
+    margin-left: 680px;
+    top: 130px;
+    position:$ab;
+    z-index: 100;  
+}
+#blanc{ 
+    width: $larg;
+    height: 155px;
+    position: $ab;
+    background: $col;
+    clip-path: polygon(0 0,100% 0%, 0 100%);
+    top: 487px;
+}
+#wraper{
+    position: $rel;
+    padding-right: 200px;
+    padding-left: 70px;
+    top:120px;
+}
+#rap{
+    @include dar;
+    padding: 0;
+    margin: 0;
+    right: 150px;
+    top: 50px;
+}
+#hip{
+    position: $rel;}
+.text{
+    
+    margin-left: 500px;
+}
+h3{
+    @include pla;
+    top: 130px;
+    font-size: 50px;
+}
+h5{
+    @include po;
+    top: 210px;
+    font-weight: 100;
+    @include so;
+}
+.point{
+  @include der;
+}
+.ste{
+    margin-left: 90px;
+}
+h4{
+  @include dev;
+    top: 600px;
+}
+h6{
+    @include po;
+    top: 685px;
+    font-weight: 100;
+    @include so;
+}
+.pot{
+    @include der;}
+#photo{
+    margin-left:700px ; }
+#hop{
+    @include dar;
+    top: 120px;
+    left: 50px;
+}
+#bb{
+    position: $rel;
+    right: 25px;
+    top: 35px; 
+}
+.phrase{
+    @include dev;
+    margin-top: 270px;
+    left: 500px;
+}
+.top{
+    @include der;}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 450px;
+}
+.card1{
+    @include cart;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid gainsboro;
+}
+.card2{
+    @include cart;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.card3{
+    @include cart;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid gainsboro;  
+}
+.pers{
+    color: $col;
+    position: $rel;
+    top: -5px;
+}
+.card1 p{
+    color: $gr;
+}
+.card2 p{
+    color: $gr;
+}
+.card3 p{
+    color: $gr;
+}
+.card1::after{
+    @include cer;
+    left: 15%;
+}
+.card .card2::after{
+   @include cer;
+    left: 42%;
+}
+.card .card3::after{
+   @include cer;
+    left: 70%;
+}
+#bevary{
+    border-radius: 50%;
+    position: $rel;
+    left: 150px;
+    margin-top: 5px;
+}
+.profil p{
+    @include pla;
+    left: 240px;
+    margin-top: -60px;
+}
+.rr{
+    @include pla;
+    left: 240px;
+    margin-top: -40px;
+    color: grey;
+    font-size: 15px;  
+}
+#steavy{
+    border-radius: 50%;
+    position: $ab;
+    left: 515px;
+    margin-top: -75px;
+}
+.pr p{
+    @include po;
+    left: 600px;
+    margin-top: -61px;
+}
+.ii{
+    @include po;
+    left: 600px;
+    margin-top: -58px;
+    color: grey;
+    font-size: 15px;
+}#nash{
+    border-radius: 50%;
+    position: $ab;
+    left: 890px;
+    margin-top: -93px;
+}
+.pry p{
+    @include po;
+    left: 980px;
+    margin-top: -79px;
+}
+.mm{
+    @include po;
+    left: 980px;
+    margin-top: -76px;
+    color: grey;
+    font-size: 15px; 
+}
+#ex{
+    position: $ab;
+    left:550px;
+    margin-top: 60px; 
+}
+#pe{
+    position: $ab;
+    left: 680px;
+    margin-top: 290px;
+}
+.total{
+    @include pla;
+    margin-top: 160px;
+    padding-left: 240px; 
+}
+.sorat{
+    position: $ab;
+    margin-top: 50px;
+    text-align: end;
+    color: $whi;
+  p{
+    line-height:1.6rem;
+  }
+}
+.sora{
+    text-align: end;
+    position:$rel;
+    top: 10px;
+    color:$whi;
+   p{
+    line-height:1.6rem ;
+}
+ }
+.star{
+    position: $rel;
+    top: 12px;
+}
+.cote{
+    @include pla;
+    margin-top: 160px;
+    padding-left: 950px;
+    color: $whi;
+}
+.sort{
+    position: $ab;
+    margin-top: 50px;
+  line-height: 1.6rem;
+}
+.sor{
+    position: $rel;
+    top: 10px;
+  p{
+    line-height:1.6rem ; }
+}
+.sto{
+    position:$rel;
+    top: 12px;
+}
+.ka{
+    @include pla;
+    margin-top: 660px;
+    left: 400px;
+    font-size: 1.5rem;
+}
+.tim{
+    font-size: 50px;
+    color: $col;
+    font-family:$mon;
+}
+.eh{
+    @include po;
+    margin-top: 750px;
+    left: 340px;
+    color: $gr;
+}.adress{
+    position:$ab;
+    margin-top: 810px;
+    left: 500px;
+}
+input{
+    background: rgb(228, 227, 227);
+    border: none;
+    width: 310px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center; 
+}
+.btn{
+    width:140px ;
+    height: 40px;
+    @include pla;
+    right: -110px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+    background:$col;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+}
+#ino{
+    position:$rel;
+    top: 1000px;
+    left: 600px;
+}
+.ry{
+    @include pla;
+    margin-top: 1000px;
+    left: 500px;
+    font-size: 1.5rem;
+}
+.tir{
+    font-size: 50px;
+    color: $col;
+    font-family:$mon;
+}
+.at{
+    @include po;
+    margin-top: 1090px;
+    left: 390px;
+    color: $gr;
+}
+#lo{
+    position: $ab;
+    margin-top: 1150px;
+    left: 600px;
+}
+.fin{
+    @include po;
+    margin-top: 1350px;
+    left: 40px;
+    padding: 20px 20px;
+    border: 1px solid transparent;
+    list-style: none;   
+}
+#ya{
+    color: black;
+}.fin tr th{
+    display: inline-block;  
+}
+#vi{
+    position: $ab;
+    top: 170px;
+    right: 250px;  
+}
+#ca{
+    position: $ab;
+    right: 250px;
+    top: 10px;
+}
+#fo{
+    position: $ab;
+    right: 630px;
+    top: 10px;
+}
+#ph{
+    position: $ab;
+    top: 170px;
+    right: 630px;
+    color: $whi;
+}
+.ll{
+    color: black;
+    position: $rel;
+    margin: 20px;
+    cursor: pointer;
+}
+#black{
+    width: 100%;
+    height: 396px;
+    background: $col;
+    position:$ab ;
+    margin-top: 125px;
+}
+.lange{
+    position:$ab;
+    left: 1100px;
+    margin-top: -20px;
+ }
+select{
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    background: rgb(228, 227, 227);
+    border: none;
+    color: $gr;
+}

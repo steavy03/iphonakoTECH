@@ -1,0 +1,124 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.thank-you-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Carte de remerciement */
+.thank-you-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation de checkmark */
+.checkmark {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    display: block;
+}
+
+.checkmark__circle {
+    stroke: crimson;
+    stroke-width: 2;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke: crimson;
+    stroke-width: 2;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Texte */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.message {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Loader */
+.loader {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.loader-circle {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: crimson;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.loader-circle:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader-circle:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    } 40% {
+        transform: scale(1);
+    }
+}
+
+/* Bouton Retour */
+.back-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}

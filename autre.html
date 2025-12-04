@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres services</title>
+    <link rel="stylesheet" href="assets/css/styleau.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Iphona<span class="read">KO</span></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="tarif.html">TELECHARGE</a></li>
+                </ul>
+            </div>
+            <img src="assets/image/icons8-menu-50.png" alt="menubar" class="menubar">
+        </div>
+    </div>
+        <section class="service">
+            <h1 class="heading">Notre Service<span class="ex"> .</span></h1>
+            <div class=" wrapper">
+                <div class="box">
+                    <img src="assets/image/icons8-réseau-mobile-100.png" alt="" id="paa" width="70px">
+                    <h2>Déblocage de Réseau</h2>
+                    <p> Rendre standard votre Iphone à tous les réseaux mobile</p>
+                    <a href="simlock.html" class="btn">Commencer</a>
+                </div>
+    
+                <div class="box">
+                    <img src="assets/image/pngegg.png" alt="" id="naa" width="70px">
+                    <h2>Création d'icloud</h2>
+                    <p> si vous avez des difficulté sur l création de compte</p>
+                    <a href="formulaire.html" class="btn">Commencer</a>
+                </div>
+    
+                <div class="box">
+                    <img src="assets/image/icons8-code-barre-100.png" alt="" id="tsy" width="70px">
+                    <h2>Régistre imei ou SN</h2>
+                    <p> Pour faire le bypass le régistre de imei ou  SN est obligatoire</p>
+                    <a href="imei.html" class="btn">Commencer</a>
+                </div>
+        </section>
+        <div class="samo">
+            <a href="service.html" class="btn">Retour</a>
+            </div>
+<footer>
+    <p>&copy; 2025 IphonaKo. Tous droits réservés.</p>
+</footer>
+
+<script>
+    // Sélectionner l'icône du menu burger et le menu
+    const menubar = document.querySelector('.menubar');
+    const menu = document.querySelector('.menu');
+    
+    // Ajouter un écouteur d'événement pour le clic sur l'icône
+    menubar.addEventListener('click', () => {
+        // Basculer la classe 'active' sur le menu
+        menu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
+        

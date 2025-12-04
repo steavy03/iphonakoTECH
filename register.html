@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - IphonaKoTech</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="assets/image/redpa.png" alt="IphonaKo Logo" class="logo">
+        <h3>Iphona<span class="colo">KO</span></h3>
+        <h2>Inscription<span class="pointt">.</span></h2>
+
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="email_register">Adresse email</label>
+                <input type="email" id="email_register" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password_register">Mot de passe</label>
+                <input type="password" id="password_register" required>
+            </div>
+
+            <button type="submit">Créer un compte</button>
+
+            <p id="errorMessage" class="error-message"></p>
+
+            <p style="margin-top:15px;">
+                Déjà un compte ?
+                <a href="login.html" style="color:crimson; text-decoration:none;">Se connecter</a>
+            </p>
+        </form>
+    </div>
+
+    <script type="module" src="assets/js/auth.js"></script>
+
+</body>
+</html>

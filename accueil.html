@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        if (!localStorage.getItem("userLogged")) {
+            window.location.href = "login.html";
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IphonaKO - Réparation iPhone</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="icon">
+            <h2 class="logo">Iphona<span class="read">KO</span></h2>
+        </div>
+        
+        <div class="menu" id="menu">
+            <ul>
+                <li class="active"><a href="#">ACCUEIL</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="tarif.html">TELECHARGE</a></li>
+            </ul>
+        </div>
+        <img src="assets/image/icons8-menu-50.png" alt="menubar" class="menubar">
+    </nav>
+
+    <!-- Section principale -->
+    <section class="main-content">
+        <div class="content-text">
+            <h1>Simple, Rapide <br>& Garantie.</h1>
+            <p>Avec <span>IphonaKO</span>, Tous les problèmes de votre téléphone sont réglés!</p>
+            <a href="service.html"><button class="cn">Commencer</button></a>
+        </div>
+        <img src="assets/image/iphonero.png" alt="iPhone" class="phone-image floating">
+    </section>
+
+    <!-- Section services -->
+    <section class="services-section">
+        <div class="service-wrapper">
+           
+            <div class="service-text">
+                <h3>Déblocage Itunes et Logo<span class="point">.</span></h3>
+                <h5>Nous débloquons les iPhones, iPods et iPads qui sont bloqués sur le logo Apple, sur le logo iTunes ou sur un écran noir, problèmes liés au système ou au matériel.</h5>
+            </div>
+            <div class="service-images">
+                <img src="assets/image/itunn.png" alt="iPhone bloqué logo">
+                
+            </div>
+        </div>
+
+        <div class="service-wrapper reverse">
+            <div class="service-text">
+                <h3>Déverrouillage icloud<span class="point">.</span></h3>
+                <h5> Nous proposons des services de déverrouillage (bypass) à distance pour iPhone et iPad cellulaires via notre site iPhonako. Le déblocage est disponible avec ou sans réseau, pour les modèles allant de l'iPhone 5 à l'iPhone 15 Pro Max, ainsi que pour les iPad cellulaires.</h5>
+            </div>
+            <div class="service-images">
+                <img src="assets/image/hell.png" alt="iPhone désactivé">
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Section iCloud -->
+    <section class="icloud-section">
+        <div class="icloud-text">
+            <p>Création d'icloud<span class="top">.</span></p>
+            <h6>Créer votre compte icloud en quelque minute sans difficulté avec notre site.</h6>
+        </div>
+        <img src="assets/image/pngegg.png" alt="iCloud logo" class="cloud" width="90px">
+        <a href="formulaire.html"><button  class="icloud-button">Créer</button></a>
+    </section>
+
+    <!-- Section témoignages -->
+    <section class="testimonials">
+        <div class="cards-container">
+            <div class="card">
+                <p>Voici , un expert en pièces détachées pour iPhone, toujours à l'écoute pour vous conseiller et vous proposer les meilleures solutions pour réparer votre appareil.</p>
+                <span class="pers">Instagram</span>
+            </div>
+            <div class="card">
+                <p>Voici, notre administrateur dédié à la gestion de IphonaKO. Grâce à son expertise en réparation iPhone et son sens de l'organisation, il veille à ce que chaque demande soit traitée avec efficacité et précision pour vous offrir un service de qualité.</p>
+                <span class="pers">Facebook</span>
+            </div>
+            <div class="card">
+                <p>Voici , notre expert en service client, toujours disponible pour vous accompagner avec professionnalisme et bienveillance, afin de répondre à toutes vos demandes rapidement et efficacement.</p>
+                <span class="pers">Whatsapp</span>
+            </div>
+        </div>
+
+        <div class="profiles">
+            <div class="profile">
+                <img src="assets/image/sambo.JPG" alt="Minday">
+                <p>Jahseh Onfroy</p>
+                <span class="rr">Vendeur</span>
+            </div>
+            <div class="profile">
+                <img src="assets/image/ADII.jpg" alt="Steavy Nash">
+                <p>Steavy Nash</p>
+                <span class="ii">ADMINS</span>
+            </div>
+            <div class="profile">
+                <img src="assets/image/OCO.jpg" alt="Cothas">
+                <p>Ishaq Bree</p>
+                <span class="mm">Livreur</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section fonctionnalités -->
+    <section class="features-section">
+        <img src="assets/image/appled.png" alt="iPhone" class="features-image">
+        
+        <div class="features-text">
+            <div class="feature">
+                <img src="assets/image/face-id (1).png" alt="Face ID icon" class="iconss">
+                <span class="star">Face-ID</span>
+                <p>Réparation de face ID qui ne fonctionne pas après une mise à jour de système ou changement de pièce</p>
+            </div>
+            
+            <div class="feature">
+                <img src="assets/image/no-sim (1).png" alt="No sim" class="iconss">
+                <span class="star">Bypass No SIM</span>
+                <p>Déblocage des iphone 5 à 15pro max instantané mais ne prend pas en charge les cart SIM</p>
+            </div>
+            
+            <div class="feature">
+                <img src="assets/image/fingerprint.png" alt="Touch ID" class="iconss">
+                <span class="star">Touch-ID</span>
+                <p>Réparation de Touch ID et Home des iphones 5 à Se 2022 qui qui ne fonctionne pas</p>
+            </div>
+            
+            <div class="feature">
+                <img src="assets/image/sim (1).png" alt="SIM" class="iconss">
+                <span class="star">Bypass avec SIM</span>
+                <p>Déblocage des iphone 5 à 15pro instantané et qui prend en charge les cart SIM</p>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Section newsletter -->
+    <section class="newsletter">
+        <h1>Envoyer un message<span class="tim">.</span></h1>
+        <p>Lorem ipsum dolor sitamet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+        
+        <div class="newsletter-input">
+            <input type="email" placeholder="Votre adresse e-mail">
+            <button>Abonner</button>
+        </div>
+    </section>
+
+    <!-- Section téléchargement -->
+    <section class="download-section">
+        <img src="assets/image/apple.png" width="50px" alt="App Icon" class="download-icon">
+        <h1>Téléchargez l'application<span class="tir">.</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <img src="assets/image/Layer 2.png" alt="App Store" class="app-store">
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">À PROPOS</a>
+            <a href="#">FAQ</a>
+            <a href="contact.html">SUPPORT</a>
+            <a href="autre.html">BLOG</a>
+            <a href="#">TÉLÉCHARGER</a>
+        </div>
+        
+        <div class="language-selector">
+            <select>
+                <option>ANGLAIS</option>
+                <option>FRANÇAIS</option>
+                <option>MALAGASY</option>
+            </select>
+        </div>
+    </footer>
+
+    <script src="assets/js/script1.js"></script>
+</body>
+</html>

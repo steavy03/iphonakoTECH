@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMLOCK</title>
+    <link rel="stylesheet" href="assets/css/stylesim.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Iphona<span class="read">KO</span></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="tarif.html">TELECHARGE</a></li>
+                </ul>
+            </div>
+            <img src="assets/image/icons8-menu-50.png" alt="menubar" class="menubar">
+        </div>
+    </div>
+    
+
+    <div class="form-container">
+        <h2>Formulaire de Simlock</h2>
+        <hr>
+        <form action="https://formsubmit.co/bevarysteavynash@gmail.com"  method="POST"id="monForm">
+            <input type="hidden" name="_subject" value="Nouveau formulaire soumis">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="merci.html">
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="imei">IMEI ou SN de l'IPHONE</label>
+            <input type="text" id="IMEI" name="IMEI ou SN" placeholder="Entrez l'IMEI ou SN">
+
+
+            <label for="telephone">Numéro de téléphone<span class="crim"> *</span></label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="Modèle">Modèle de l'iphone</label>
+            <select id="genre" name="Modèle" required>
+                <option value="iphone 5/5s/5c ">iphone 5/5s/5c</option>
+                <option value="iphone se2016/6/6+/6s/6s+">iphone se2016/6/6+/6s/6s+</option>
+                <option value="iphone 7/7+">iphone 7/7+</option>
+                <option value="iphone 8/8+">iphone 8/8+</option>
+                <option value="iphone x/xr/xs/xs max">iphone x/xr/xs/xs max</option>
+                <option value="iphone se2020/2022/2024">iphone se2020/2022/2024</option>
+                <option value="iphone 11/11pro/11pro max">iphone 11/11pro/11pro max</option>
+                <option value="iphone 12mini/12/12pro/12pro max">iphone 12mini/12/12pro/12pro max</option>
+                <option value="iphone 13mini/13/13pro/13pro max">iphone 13mini/13/13pro/13pro max</option>
+                <option value="iphone 14+/14/14pro/14pro max">iphone 14+/14/14pro/14pro max</option>
+                <option value="iphone 15+/15/15pro/15pro max">iphone 15+/15/15pro/15pro max</option>
+                <option value="iphone 16+/16/16pro/16pro max">iphone 16+/16/16pro/16pro max</option>
+            </select>
+
+            <label for="email">Votre adresse email<span class="crim"> *</span></label>
+            <input type="email" id="email" name="email" required>
+            <h5>Le déblocage de Réseau des Iphones n'est pas instantané.<br>Il peut prendre 3 à 5 jours</h5>
+
+           
+            <div class="buttons">
+                <a href="autre.html"><button type="button" class="btn-retour">Retour</button></a>
+                <button type="submit" class="btn-envoyer">Envoyer</button>
+            </div>
+        </form>
+    </div>
+    <div class="rema">
+        <h1>Remarque:</h1>
+    </div>
+    <h3>Avant de remplir le formulaire de SIMLOCK, assurez-vous d'avoir un bon connexion internet<br>
+    et verifiez bien que le numero de télephone que vous allez utiliser pour l'inscription est bien fonctionnel.<br>
+    Après avoir verifier ça, veuillez faire le paiement sur le numero qui se trouve en bas . Et assurez vous<br>
+    saisissez le bon numero aux NOM DE L' ADMINISTRATEUR:<span class="trs"> STEAVY NASH</span>.Si le transaction est effectué,<br>
+    envoyez le capture d'écran du message sur notre page FACEBOOK:<span class="trs"> IphonaKO</span> ou sur note numero WHATSAPP.<br>
+    Après avoir suivi tous les instructions , vous pouvez maintenant finaliser et envoyer le formulaire. </h3>
+     
+       <h1>Mode de paiement:</h1>
+    <div class="iaz">    
+       <img src="assets/image/orange.png" id="orn" width="154px">
+       <h4 class="voa">0322060502</h4>
+    </div>   
+    <div class="yase">
+        <img src="assets/image/telma.png" id="orn" width="154px"> 
+        <h4 class="voa">0384449859</h4>
+    </div>
+    <script>
+        // Sélectionner l'icône du menu burger et le menu
+        const menubar = document.querySelector('.menubar');
+        const menu = document.querySelector('.menu');
+        
+        // Ajouter un écouteur d'événement pour le clic sur l'icône
+        menubar.addEventListener('click', () => {
+            // Basculer la classe 'active' sur le menu
+            menu.classList.toggle('active');
+        });
+    </script> 
+    
+    
+</body>
+</html>

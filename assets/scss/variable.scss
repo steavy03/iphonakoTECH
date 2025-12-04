@@ -1,0 +1,67 @@
+$txt:line-through;
+$rel:relative;
+$la:'lato';
+$ab:absolute;
+$larg:100%;
+$mon:monospace;
+$gr:grey;
+$col:crimson;
+$wh:white;
+@mixin dev{
+  position:$ab;
+  font-family:$la;
+  font-size:3rem;}
+@mixin der{
+  font-size:50px;
+  color:$col;
+  font-family:$mon;}
+@mixin dir{
+  color:$whi;
+  font-family:$la;}
+@mixin dar{
+  position:$rel;
+  z-index:100;
+}
+@mixin cart{
+    width: 300px;
+     background-color: $whi;
+     border-radius: 1px;
+     overflow: hidden;
+     margin: 20px;
+     font-size: 15px;
+     line-height: 1.9;
+     font-family: $la;
+     padding-left: 20px;
+     height: 190px;
+ }
+
+@mixin pla{
+  position:$ab;
+  font-family:$la;
+  
+}
+@mixin cer{
+   position: $ab;
+    width: 20px;
+    height: 20px;
+    border-top: 0px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    border-left: 0px solid gainsboro;
+    margin-left: -25px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: 22px;
+    background: $whi;
+}
+@mixin po{
+  position:$ab;
+  font-family: arial;
+}
+@mixin so{
+  position:$ab;
+  font-family:arial;
+  color:$gr;
+  line-height:1.5rem;
+  font-size:0.9rem;
+}

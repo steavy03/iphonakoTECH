@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="assets/css/styleach.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+    <header>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">Iphona<span class="read">KO</span></h2>
+                </div>
+                
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="accueil.html">ACCUEIL</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="tarif.html">TELECHARGE</a></li>
+                    </ul>
+                </div>
+                <img src="assets/image/icons8-menu-50.png" alt="menubar" class="menubar">
+            </div>
+        </div> <!-- Il manquait cette fermeture de div -->
+        <div class="form-container">
+            <h2>Demande de bypass No sim</h2>
+            <hr>
+            <form action=" " method="POST"id="monForm">
+                <input type="hidden" name="_subject" value="Nouveau formulaire soumis">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="merci.html">
+    
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
+    
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+    
+                <label for="telephone">Numéro de téléphone<span class="crim"> *</span></label>
+                <input type="tel" id="telephone" name="telephone" required>
+    
+                <label for="genre">serie d'appareil</label>
+                <select id="genre" name="genre" required>
+                    <option value="masculin">iphone 5</option>
+                    <option value="feminin">iphone 5s</option>
+                    <option value="masculin">iphone 6</option>
+                    <option value="feminin">iphone 6+</option>
+                    <option value="masculin">iphone 6s</option>
+                    <option value="feminin">iphone 6s+</option>
+                    <option value="masculin">iphone se 2016</option>
+                    <option value="feminin">iphone 7</option>
+                    <option value="masculin">iphone 7+</option>
+                    <option value="feminin">iphone 8</option>
+                    <option value="masculin">iphone 8+</option>
+                    <option value="feminin">iphone X</option>
+                </select>
+
+                <label for="numero serie">Numéro de serie<span class="crim"> *</span></label>
+                <input type="numero" id="telephone" name="sn" required>
+    
+                <label for="email">Adresse email<span class="crim"> *</span></label>
+                <input type="email" id="email" name="email" required>
+    
+                <div class="buttons">
+                    <a href="page.html"><button type="button" class="btn-retour">Retour</button></a>
+                    <button type="submit" class="btn-envoyer">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <script>
+        // Sélectionner l'icône du menu burger et le menu
+        const menubar = document.querySelector('.menubar');
+        const menu = document.querySelector('.menu');
+        
+        // Ajouter un écouteur d'événement pour le clic sur l'icône
+        menubar.addEventListener('click', () => {
+            // Basculer la classe 'active' sur le menu
+            menu.classList.toggle('active');
+        });
+    </script>

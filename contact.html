@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="assets/css/styleco.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">Iphona<span class="read">KO</span></h2>
+                </div>
+                
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="accueil.html">ACCUEIL</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="tarif.html">TELECHARGE</a></li>
+                    </ul>
+                </div>
+                <img src="assets/image/icons8-menu-50.png" alt="menubar" class="menubar">
+            </div>
+        </div> <!-- Il manquait cette fermeture de div -->
+    </header>
+    
+    <section id="contact" class="contact">
+        <h2 class="animate__animated">Contactez-nous</h2>
+        <h4 class="disc">En cas de problème ou dysfonctionnement de notre site . Nous vous prions de nous contacter.</h4>
+        <form id="contact-form" class="animate__animated" action="https://formsubmit.co/bevarysteavynash@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn-contact">Envoyer</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+    
+    <div class="icc">
+        <div class="whi">    
+            <img src="assets/image/icons8-whatsapp-96.png" width="80px" height="80px"><h3 class="inf">+261322060502</h3>
+        </div>
+        <div class="jess"> 
+            <img src="assets/image/icons8-facebook-nouveau-96.png" width="80px" height="80px"><h3 class="inf">IphonaKO Mada</h3>
+        </div>
+        <div class="hit"> 
+            <img src="assets/image/icons8-e-mail-100.png" width="80px" height="80px"><h3 class="inf">bevarysteavynash@gmail.com</h3>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 IphonaKo. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Sélectionner l'icône du menu burger et le menu
+        const menubar = document.querySelector('.menubar');
+        const menu = document.querySelector('.menu');
+        
+        // Ajouter un écouteur d'événement pour le clic sur l'icône
+        menubar.addEventListener('click', () => {
+            // Basculer la classe 'active' sur le menu
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

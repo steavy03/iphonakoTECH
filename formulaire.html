@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire du compte</title>
+    <link rel="stylesheet" href="assets/css/stylefr.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Iphona<span class="read">KO</span></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="tarif.html">TELECHARGE</a></li>
+                </ul>
+            </div>
+            <img src="assets/image/icons8-menu-50.png" alt="menubar" class="menubar">
+        </div>
+    </div>
+    
+
+    <div class="form-container">
+        <h2>Formulaire du compte</h2>
+        <hr>
+        <form action=" https://formsubmit.co/bevarysteavynash@gmail.com" method="POST"id="monForm">
+            <input type="hidden" name="_subject" value="Nouveau formulaire soumis">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="merci.html">
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="date-naissance">Date de naissance<span class="crim"> *</span></label>
+            <input type="date" id="date-naissance" name="date-naissance" required>
+
+            <label for="telephone">Numéro de téléphone<span class="crim"> *</span></label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="genre">Genre</label>
+            <select id="genre" name="genre" required>
+                <option value="masculin">Masculin</option>
+                <option value="feminin">Féminin</option>
+            </select>
+
+            <label for="email">Adresse email existante ou nouvelle adresse iCloud<span class="crim"> *</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mot-de-passe">Nouveau mot de passe<span class="crim"> *</span></label>
+            <input type="password" id="mot-de-passe" name="mot-de-passe" required>
+           
+            <div class="buttons">
+                <a href="accueil.html"><button type="button" class="btn-retour">Retour</button></a>
+                <button type="submit" class="btn-envoyer">Envoyer</button>
+            </div>
+        </form>
+    </div>
+    <div class="rema">
+        <h1>Remarque:</h1>
+    </div>
+    <h3>Avant de remplir le formulaire de création de compte icloud, assurez-vous d'avoir un bon connexion internet<br>
+    et verifiez bien que le numero de télephone que vous allez utiliser pour l'inscription est bien fonctionnel.<br>
+    Après avoir verifier ça, veuillez faire le paiement sur le numero qui se trouve en bas . Et assurez vous<br>
+    saisissez le bon numero aux NOM DE L' ADMINISTRATEUR:<span class="trs"> STEAVY NASH</span>.Si le transaction est effectué,<br>
+    envoyez le capture d'écran du message sur notre page FACEBOOK:<span class="trs"> IphonaKO</span> ou sur note numero WHATSAPP.<br>
+    Après avoir suivi tous les instructions , vous pouvez maintenant finaliser et envoyer le formulaire. </h3>
+     
+       <h1>Mode de paiement:</h1>
+    <div class="iaz">    
+       <img src="assets/image/orange.png" id="orn" width="154px">
+       <h4 class="voa">0322060502</h4>
+    </div>   
+    <div class="yase">
+        <img src="assets/image/telma.png" id="orn" width="154px"> 
+        <h4 class="voa">0384449859</h4>
+    </div>
+    <script>
+        // Sélectionner l'icône du menu burger et le menu
+        const menubar = document.querySelector('.menubar');
+        const menu = document.querySelector('.menu');
+        
+        // Ajouter un écouteur d'événement pour le clic sur l'icône
+        menubar.addEventListener('click', () => {
+            // Basculer la classe 'active' sur le menu
+            menu.classList.toggle('active');
+        });
+    </script> 
+    
+</body>
+</html>

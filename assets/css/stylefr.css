@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    width: 100%;
+    background:  #333;
+    height: 74px;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 75px;
+    margin: auto;
+  }
+  
+  .icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+  }
+  
+  .logo {
+    color: white;
+    font-family: "lato";
+    font-size: 35px;
+    padding-left: 15px;
+    float: left;
+    padding-top: 10px;
+  }
+  .read{
+    color: crimson;
+    font-size: 45px;
+  }
+  
+  ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 30px;
+  }
+  ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: arial;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 20px;
+  }
+  ul li a :hover {
+    background: white;
+    color: crimson;
+    text-decoration: line-through;
+    border-radius: 20px;
+  }
+  ul li a:hover{
+    background: white;
+    color: black;
+  }
+  
+  .active {
+    text-decoration: line-through;
+    color: white;
+  }
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 40px;
+}
+.crim{
+    color: crimson;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="tel"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Bordures arrondies */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-envoyer {
+    background-color: #282727; /* Fond noir pour "Envoyer" */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-retour {
+    background-color: #ccc; /* Fond gris pour "Retour" */
+    color: #141414;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-envoyer:hover {
+    background-color: #1a1a1a; /* Effet hover pour "Envoyer" */
+}
+
+.btn-retour:hover {
+    background-color: #bbb; /* Effet hover pour "Retour" */
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    margin: 35px;
+}
+h3{
+    text-align:center;
+    line-height: 1cm;
+    font-family: "lato";
+}
+.trs{
+    color: crimson;
+    font-family: "lato";
+}
+ #orn{
+    position: relative;
+    left:20%;
+ }
+ h4{
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-family: "lato";
+    right: 60px;
+ }
+ .yase{
+    display: flex;
+ }
+ .iaz{ 
+    display: flex;
+ }
+ .voa{
+    position: relative;
+    left: 20%;
+    margin: 40px;
+ }
+
+ /* Styles pour le menu burger en version mobile */
+.menubar {
+  display: none; /* Caché par défaut */
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Media query pour les écrans mobiles */
+@media (max-width: 768px) {
+  .menubar {
+      display: block; /* Afficher l'icône burger */
+  }
+  
+  .menu {
+      display: none;
+      position: absolute;
+      top: 74px;
+      left: 0;
+      width: 100%;
+      background: #333;
+      flex-direction: column;
+      padding: 20px 0;
+      z-index: 1000;
+  }
+  
+  .menu.active {
+      display: flex;
+  }
+  
+  .menu ul {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 0;
+  }
+  
+  .menu li {
+      text-align: center;
+      margin: 10px 0;
+  }
+  
+  .menu li a {
+      display: block;
+      padding: 15px;
+      margin: 0;
+  }
+  
+  .navbar {
+      position: relative;
+  }
+}
+.menubar {
+    filter: invert(0); /* Pour que l'icône soit visible sur fond sombre */
+    z-index: 1001; /* Pour s'assurer qu'elle est au-dessus de tout */
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+}

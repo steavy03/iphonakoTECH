@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telechargement</title>
+    <link rel="stylesheet" href="assets/css/styleta.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const downloadButtons = document.querySelectorAll('.btn[href]:not([href="#"])');
+        
+        downloadButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = button.getAttribute('href');
+                if (!href || href === '#') return;
+                
+                // Sauvegarder le texte original
+                const originalText = button.textContent;
+                
+                // Activer l'état de téléchargement
+                button.classList.add('downloading');
+                
+                // Lancer le téléchargement
+                const a = document.createElement('a');
+                a.href = href;
+                a.download = href.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                
+                // Après l'animation (2 secondes)
+                setTimeout(() => {
+                    button.classList.remove('downloading');
+                    button.classList.add('downloaded');
+                    button.textContent = 'Succès';
+                    
+                    // Réinitialiser après 2 secondes
+                    setTimeout(() => {
+                        button.classList.remove('downloaded');
+                        button.textContent = originalText;
+                        document.body.removeChild(a);
+                    }, 2000);
+                }, 2000);
+            });
+        });
+    });
+    </script>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Iphona<span class="read">KO</span></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="tarif.html">TELECHARGE</a></li>
+                </ul>
+            </div>
+            <img src="assets/image/icons8-menu-50.png" alt="menubar" class="menubar">
+        </div>
+    </div>
+        <section class="service">
+          <h1 class="heading">Logiciels à télecharger<span class="ex"> .</span></h1>
+          <div class=" wrapper">
+              <div class="box">
+                  <img src="assets/image/3utools_logo.png" alt="" id="paa" width="70px">
+                  <h2>3uTools</h2>
+                  <p>un logiciel qui permet aux utilisateurs d'un appareil Apple de gérer leur iPhone ou leur iPad depuis un ordinateur qui fonctionne sous Windows.</p>
+                  <a href="https://3utools.org/" target="_blank" class="btn">Télecharger</a>
+              </div>
+  
+              <div class="box">
+                  <img src="assets/image/ultraviewer-09-03-2018 10-23-23.avif" alt="" id="naa" width="70px">
+                  <h2>Ultraview</h2>
+                  <p>une application légitime qui offre des fonctionnalités d'accès/contrôle à distance pour un/plusieurs appareils, partage de fichiers, chat, etc</p>
+                  <a href="https://www.ultraviewer.net/fr/download.html" target="_blank" class="btn">Télecharger</a>
+              </div>
+  
+              <div class="box">
+                  <img src="assets/image/pngwing.com (3).png" alt="" id="tsy" width="70px">
+                  <h2>Checkr1n/WinRa1n</h2>
+                  <p> un outil qui peut aider à contourner le verrouillage d'activation iCloud sur les appareils Apple fonctionnant sous iOS 12.3 ou ultérieur.</p>
+                  <a href="https://checkra.in/" target="_blank" class="btn">Télecharger</a>
+              </div>
+  
+              <div class="box">
+                  <img src="assets/image/1-01741432981.png" alt="" width="80px">
+                  <h2>HaaFedk-iCloud-Free-v8</h2>
+                  <p>un outil gratuit  conçu pour contourner les verrous iCloud sur les appareils iOS iphone , ipad , ipod ,etc</p>
+                  <a href="https://haafedk-icloud-free-v3.updatestar.com/fr" target="_blank" class="btn">Télecharger</a>
+              </div>
+  
+              <div class="box">
+                  <img src="assets/image/ipsw.png" width="70px">
+                  <h2>Firmware</h2>
+                  <p>Logiciel de petite taille qui se retrouve dans un matériel informatique (ordinateur , smartphone, tablette...) en vue d’une utilisation spécifique.</p>
+                  <a href="https://ipsw.me/" target="_blank" class="btn">Télecharger</a>
+                 
+              </div>
+  
+              <div class="box">
+                  <img src="assets/image/ibypaa.png" width="70px">
+                  <h2>Lpro iBYPASS</h2>
+                  <p>une nouvelle solution pour contourner le verrouillage d'activation iCloud avec prise en charge des appareils checkm8 (iPhone 6 – iPhone X), y compris le signal.</p>
+                  <a href="https://ibypass-lpro.updatestar.com/fr" target="_blank" class="btn">Télecharger</a>
+              </div>
+             
+          </div>
+         
+      </section>
+      <div class="samo">
+          <a href="tuto.html" class="btnn">Tutorials</a>
+          </div>
+          <footer>
+              <p>&copy; 2025 IphonaKo. Tous droits réservés.</p>
+          </footer>
+          <script>
+            // Sélectionner l'icône du menu burger et le menu
+            const menubar = document.querySelector('.menubar');
+            const menu = document.querySelector('.menu');
+            
+            // Ajouter un écouteur d'événement pour le clic sur l'icône
+            menubar.addEventListener('click', () => {
+                // Basculer la classe 'active' sur le menu
+                menu.classList.toggle('active');
+            });
+        </script>
+</body>
+</html>
+          
